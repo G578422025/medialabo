@@ -28,23 +28,23 @@ h2 {
 
 div#zentai {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 1fr 1fr; 
+  gap: 10px;                     
   width: 1024px;
 }
 
 div#zentai > div {
   background-color: #ffefaf;
-  padding: 5px;
+  height: 200px;                 
+  padding: 5px;                  
   box-sizing: border-box;
-  position: relative;
-  border: none; 
 }
 
+
 div#zentai > div img {
-  position: absolute;
-  top: 5px;
-  right: 5px;
+  float: right;
+  margin-left: 10px;
   width: 40px;
   height: auto;
 }
+
