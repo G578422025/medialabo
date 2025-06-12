@@ -1,48 +1,50 @@
 p.info {
-	font-size: small;
-	background-color: #dfdfdf;
-	color: navy;
-	padding: 5px;
+  font-size: small;
+  background-color: #dfdfdf;
+  color: navy;
+  padding: 5px;
 }
 
 p {
-	color: navy;
+  color: navy;
 }
 
 h1 {
-	color: white;
-	text-shadow: 2px 2px 5px navy;
-	padding: 10px;
+  color: white;
+  text-shadow: 2px 2px 5px navy;
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 h2 {
-	font-family: cursive;
-	color: #3f3faf;
-	background: linear-gradient(to right, #ffefaf);
-	padding: 5px;
-	margin-top: 0;
-	margin-bottom: 5px;
+  font-family: cursive;
+  color: #3f3faf;
+  background: linear-gradient(to right, white, #ffefaf);
+  padding: 5px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  border: none; 
 }
 
 div#zentai {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 10px;
-	width: 1024px;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 1024px;
 }
 
 div#zentai > div {
-	background-color: #ffefaf;
-	padding: 5px;
-	box-sizing: border-box;
-	position: relative; 
+  background-color: #ffefaf;
+  padding: 5px;
+  box-sizing: border-box;
+  position: relative;
+  border: none; 
 }
 
 div#zentai > div img {
-	position: absolute;
-	top: 5px;
-	right: 5px;
-	width: 40px;
-	height: auto;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  height: auto;
 }
