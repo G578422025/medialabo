@@ -22,6 +22,8 @@ h2 {
 	background: linear-gradient(white, #ffefaf);
 	border: 1px solid black;
 	padding: 5px;
+	box-sizing: border-box;
+	width: 100%;
 }
 
 div#zentai {
@@ -35,12 +37,13 @@ div#zentai {
 div#zentai > div {
 	background-color: #ffefaf;
 	padding: 5px;
-	
+	box-sizing: border-box;
+	overflow: auto;
 }
 
-img.firefox-icon {
+div#zentai > div img {
 	float: right;
-	width: 48px; 
+	width: 48px;
 	height: auto;
 	margin-left: 10px;
 }
