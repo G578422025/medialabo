@@ -22,8 +22,8 @@ h2 {
 	background: linear-gradient(white, #ffefaf);
 	border: 1px solid black;
 	padding: 5px;
-	box-sizing: border-box;
-	width: 100%;
+	margin-top: 0;
+	margin-bottom: 5px;
 }
 
 div#zentai {
@@ -31,19 +31,20 @@ div#zentai {
 	grid-template-columns: 1fr 1fr;
 	gap: 10px;
 	width: 1024px;
-	height: 200px;
+
 }
 
 div#zentai > div {
 	background-color: #ffefaf;
 	padding: 5px;
 	box-sizing: border-box;
-	overflow: auto;
+	position: relative; 
 }
 
 div#zentai > div img {
-	float: right;
-	width: 48px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	width: 40px;
 	height: auto;
-	margin-left: 10px;
 }
