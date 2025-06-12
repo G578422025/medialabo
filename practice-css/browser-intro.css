@@ -1,8 +1,8 @@
-
 p.info {
 	font-size: small;
 	background-color: #dfdfdf;
 	color: navy;
+	padding: 5px;
 }
 
 p {
@@ -10,17 +10,18 @@ p {
 }
 
 h1 {
-	background-color: #7f7fcf; 
 	color: white;
 	text-shadow: 2px 2px navy;
+	background-color: #7f7fcf;
+	padding: 10px;
 }
 
 h2 {
-	border: solid 1px black;
-	margin: 5px;
 	font-family: cursive;
 	color: #3f3faf;
 	background: linear-gradient(white, #ffefaf);
+	border: 1px solid black;
+	padding: 5px;
 }
 
 div#zentai {
@@ -34,8 +35,12 @@ div#zentai {
 div#zentai > div {
 	background-color: #ffefaf;
 	padding: 5px;
+	
 }
 
 img.firefox-icon {
-	float: left;
+	float: right;
+	width: 48px; 
+	height: auto;
+	margin-left: 10px;
 }
