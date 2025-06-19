@@ -39,4 +39,6 @@ function hantei() {
 hantei();
 hantei();
 hantei();
+hantei();
+
 
