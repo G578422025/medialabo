@@ -10,7 +10,7 @@ function print(data) {
     console.log("サブタイトル: " + prog.subtitle);
     console.log("説明: " + prog.content);
     console.log("出演者: " + prog.act);
-    console.log("---------------------------");
+    console.log("--------------------------");
   }
 }
 
