@@ -36,3 +36,7 @@ function hantei() {
         kaisu++; 
     }
 }
+hantei();
+hantei();
+hantei();
+
