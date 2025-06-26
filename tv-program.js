@@ -14,15 +14,14 @@ function print(data) {
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-  const button = document.getElementById("search-btn");
-  const input = document.getElementById("keyword");
+document.getElementById("search").addEventListener("click", () => {
+  const ch = document.getElementById("channel").value;
+  const gen = document.getElementById("genre").value;
 
-  button.addEventListener("click", function () {
-    const keyword = input.value.trim();
-    console.log("検索キーワード:", keyword);
-  });
+  console.log("チャンネル: " + ch);
+  console.log("ジャンル: " + gen);
 });
+
 
 
 // 課題5-1 の関数 printDom() はここに記述すること
