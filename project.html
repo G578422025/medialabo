@@ -2,31 +2,44 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
-  <title>番組表の検索結果</title>
+  <title>NHK 番組表 検索</title>
   <link rel="stylesheet" href="project.css">
   <script src="tv-program.js" defer></script>
 </head>
 <body>
+  <h1>番組表の検索結果</h1>
 
-  <div id="search-area">
-    <h1>番組表の検索結果</h1>
-
+  <div class="search-box">
     <label for="channel">チャンネル</label>
     <select id="channel">
-      <option value="g1">NHK総合</option>
+      <option value="g1">NHK総合１</option>
       <option value="e1">Eテレ１</option>
-    </select><br>
+    </select>
+
+    <br><br>
 
     <label for="genre">ジャンル</label>
     <select id="genre">
+      <option value="0000">ニュース・報道</option>
+      <option value="0100">スポーツ</option>
       <option value="0205">情報・ワイドショー</option>
+      <option value="0300">ドラマ</option>
       <option value="0409">音楽</option>
+      <option value="0502">バラエティ</option>
+      <option value="0600">映画</option>
       <option value="0700">アニメ</option>
-    </select><br>
+      <option value="0800">ドキュメンタリー・教養</option>
+      <option value="0903">劇場・公演</option>
+      <option value="1000">趣味・教育</option>
+      <option value="1100">福祉</option>
+    </select>
+
+    <br><br>
 
     <button id="search">検索</button>
   </div>
 
+  <hr>
 
   <div id="result-area"></div>
 
