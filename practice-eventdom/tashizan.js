@@ -1,4 +1,4 @@
-document.getElementById("calc").addEventListener("click", function() {
+document.getElementById("calc").addEventListener("click", function () {
   const left = parseInt(document.getElementById("left").value);
   const right = parseInt(document.getElementById("right").value);
 
@@ -6,6 +6,6 @@ document.getElementById("calc").addEventListener("click", function() {
     document.getElementById("answer").textContent = "数値を入力してください";
   } else {
     const result = left + right;
-    document.getElementById("answer").textContent = result;
+    document.getElementById("answer").textContent = result; 
   }
 });
