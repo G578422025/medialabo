@@ -1,10 +1,11 @@
-let kotae = Math.floor(Math.random() * 10) + 1; 
+let kotae = Math.floor(Math.random() * 10) + 1;
 let kaisu = 1;
 
 console.log("答え（デバッグ用）: " + kotae);
 
 function hantei() {
   const yoso = parseInt(document.getElementById("yoso").value);
+
 
   document.getElementById("kaisu").textContent = kaisu;
 
@@ -21,8 +22,8 @@ function hantei() {
     resultMessage = "まちがい。答えはもっと小さいよ";
   }
 
-  const kaisuText = document.getElementById("kaisu").textContent;
-  document.getElementById("answer").textContent = kaisuText + "回目の予想: " + yoso;
+
+  document.getElementById("answer").textContent = yoso;
 
   document.getElementById("result").textContent = resultMessage;
 
