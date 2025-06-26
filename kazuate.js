@@ -1,44 +1,30 @@
-// 答え
-let kotae = Math.floor(Math.random() * 10) + 1;
-console.log("答え（デバッグ用）：" + kotae);
+let kotae = Math.floor(Math.random() * 10) + 1; // 正解（1〜10のランダム）
+let kaisu = 1;
 
-// 入力回数
-let kaisu = 0;
+console.log("答え（デバッグ用）: " + kotae); // コンソールに正解出力
 
-// 判定関数
 function hantei() {
-    // 予想
-    let yoso = 4;
+  const yoso = parseInt(document.getElementById("yoso").value); // 入力値を整数で取得
 
-    // 回数と予想を出力
-    console.log((kaisu + 1) + "回目の予想: " + yoso);
+  // 回数の表示更新
+  document.getElementById("kaisu").textContent = kaisu;
 
-    // すでにゲームが終了しているかチェック
-    if (kaisu >= 3) {
-        console.log("答えは " + kotae + " でした。すでにゲームは終わっています");
-        return;
-    }
+  let resultMessage = "";
+  let answerMessage = "";
 
-    // 正解
-    if (yoso === kotae) {
-        console.log("正解です。おめでとう！");
-        kaisu = 3; 
-    }
-    // 不正解
-    else {
-        if (kaisu === 2) {
-            console.log("まちがい。残念でした答えは " + kotae + " です。");
-        } else if (yoso < kotae) {
-            console.log("まちがい。答えはもっと大きいですよ");
-        } else {
-            console.log("まちがい。答えはもっと小さいですよ");
-        }
-        kaisu++; 
-    }
+  if (kaisu >= 4) {
+    resultMessage = "答えは " + kotae + " でした。ゲームは終了です。";
+  } else if (yoso === kotae) {
+    answerMessage = "正解です！";
+    kaisu = 4; // 正解したら強制終了扱いに
+  } else if (yoso < kotae) {
+    answerMessage = "まちがい。答えはもっと大きいよ";
+  } else if (yoso > kotae) {
+    answerMessage = "まちがい。答えはもっと小さいよ";
+  }
+
+  document.getElementById("answer").textContent = answerMessage;
+  document.getElementById("result").textContent = resultMessage;
+
+  kaisu++;
 }
-hantei();
-hantei();
-hantei();
-hantei();
-
-
