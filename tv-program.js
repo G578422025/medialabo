@@ -14,6 +14,17 @@ function print(data) {
   }
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const button = document.getElementById("search-btn");
+  const input = document.getElementById("keyword");
+
+  button.addEventListener("click", function () {
+    const keyword = input.value.trim();
+    console.log("検索キーワード:", keyword);
+  });
+});
+
+
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
 
