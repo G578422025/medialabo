@@ -26,8 +26,33 @@ document.getElementById("search").addEventListener("click", () => {
 
 // 課題5-1 の関数 printDom() はここに記述すること
 function printDom(data) {
+    const oldResult = document.getElementById("result");
+    if (oldResult) {
+        oldResult.remove();
+    }
 
+    const resultDiv = document.createElement("div");
+    resultDiv.id = "result";
+    document.body.appendChild(resultDiv);
+
+    let programs = data.list.g1;
+
+    for (let prog of programs) {
+        const p = document.createElement("p");
+        p.innerHTML = `
+            <strong>番組名:</strong> ${prog.title}<br>
+            <strong>開始時刻:</strong> ${prog.start_time}<br>
+            <strong>終了時刻:</strong> ${prog.end_time}<br>
+            <strong>チャンネル:</strong> ${prog.service.name}<br>
+            <strong>サブタイトル:</strong> ${prog.subtitle}<br>
+            <strong>説明:</strong> ${prog.content}<br>
+            <strong>出演者:</strong> ${prog.act}<br>
+            <hr>
+        `;
+        resultDiv.appendChild(p);
+    }
 }
+
 
 // 課題6-1 のイベントハンドラ登録処理は以下に記述
 
