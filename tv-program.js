@@ -49,11 +49,10 @@ function printDom(data) {
 
 // 課題6-1 のイベントハンドラ sendRequest() の定義
 function sendRequest() {
-  const ch = document.getElementById("channel").value;
-  const gen = document.getElementById("genre").value;
-  const area = "130";
-  const today = new Date().toISOString().split("T")[0];
-  const url = `https://www.nishita-lab.org/web-contents/jsons/nhk/${area}-${ch}-${today}.json`;
+  const ch = document.getElementById("channel").value; 
+  const gen = document.getElementById("genre").value;  
+
+  const url = `https://www.nishita-lab.org/web-contents/jsons/nhk/${ch}-${gen}-j.json`;
 
   fetch(url)
     .then((response) => {
@@ -66,6 +65,7 @@ function sendRequest() {
     .catch(showError)
     .finally(finish);
 }
+
 
 // 課題6-1: 通信が成功した時の処理は以下に記述
 function showResult(resp) {
